@@ -8,6 +8,6 @@ package com.mycompany.quiz2;
  *
  * @author USUARIO
  */
-public class TipoCombustible {
-    
+public enum TipoCombustible {
+    GASOLINA, DIESEL, ELECTRICO
 }

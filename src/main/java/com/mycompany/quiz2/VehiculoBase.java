@@ -12,6 +12,7 @@ public abstract class VehiculoBase implements IVehiculo{
      private String marca; 
      private String modelo;        
      private int velocidadActual;
+     
 
     public VehiculoBase(String marca, String modelo, int velocidadActual) {
         this.marca = marca;
@@ -32,6 +33,30 @@ public abstract class VehiculoBase implements IVehiculo{
     @Override
     public void tipoCombustible() {
         
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getVelocidadActual() {
+        return velocidadActual;
+    }
+
+    public void setVelocidadActual(int velocidadActual) {
+        this.velocidadActual = velocidadActual;
     }
      
      
