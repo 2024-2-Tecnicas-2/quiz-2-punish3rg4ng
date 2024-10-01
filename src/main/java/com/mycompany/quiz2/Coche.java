@@ -10,19 +10,14 @@ package com.mycompany.quiz2;
  */
 public class Coche extends VehiculoBase{
     
-    private TipoCombustible tipoCombustible;
+    
 
-    public Coche(String marca, String modelo, int velocidadActual) {
-        super(marca, modelo, velocidadActual);
-        this.tipoCombustible = TipoCombustible.DIESEL;
+    public Coche(String marca, String modelo, int velocidadActual, TipoCombustible tipoCombustible) {
+        super(marca, modelo, velocidadActual, tipoCombustible);
+        
     }
 
-    
-    @Override
-    public void tipoCombustible() {
-        System.out.println("El tipo de combustible es "+ this.tipoCombustible);
-    }
-    
+
     
     
 }

@@ -14,6 +14,6 @@ public interface IVehiculo {
     
     void frenar();
     
-    void tipoCombustible();
+    TipoCombustible tipoCombustible();
     
 }

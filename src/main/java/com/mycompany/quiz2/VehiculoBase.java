@@ -12,27 +12,32 @@ public abstract class VehiculoBase implements IVehiculo{
      private String marca; 
      private String modelo;        
      private int velocidadActual;
-     
+     private TipoCombustible tipoCombustible;
 
-    public VehiculoBase(String marca, String modelo, int velocidadActual) {
+    public VehiculoBase(String marca, String modelo, int velocidadActual, TipoCombustible tipoCombustible) {
         this.marca = marca;
         this.modelo = modelo;
         this.velocidadActual = velocidadActual;
+        this.tipoCombustible = tipoCombustible;
     }
 
     @Override
     public void acelerar() {
+        System.out.println("Velocidad inicial: "+this.velocidadActual);
         this.velocidadActual +=10;
+        System.out.println("Se ha aumentado la velocidad en 10 millas por hora , velocidad actual: "+this.velocidadActual);
     }
 
     @Override
     public void frenar() {
+        System.out.println("Velocidad inicial: "+this.velocidadActual);
         this.velocidadActual -=10;
+        System.out.println("Se ha reducido la velocidad en 10 millas por hora, velocidad actual: "+this.velocidadActual);
     }
 
     @Override
-    public void tipoCombustible() {
-        
+    public TipoCombustible tipoCombustible() {
+        return this.tipoCombustible;
     }
 
     public String getMarca() {
