@@ -21,12 +21,12 @@ public abstract class VehiculoBase implements IVehiculo{
 
     @Override
     public void acelerar() {
-        System.out.println("el vehiculo esta acelerando"); 
+        this.velocidadActual +=10;
     }
 
     @Override
     public void frenar() {
-        System.out.println("el vehiculo esta frenando ");
+        this.velocidadActual -=10;
     }
 
     @Override
